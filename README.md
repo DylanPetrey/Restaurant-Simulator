@@ -11,7 +11,6 @@ Compile java programs
 ```bash
 javac *.java
 ```
-Run
 ```bash
 java RestaurantSimulator
 ```
