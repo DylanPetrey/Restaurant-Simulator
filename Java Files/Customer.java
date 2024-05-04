@@ -25,11 +25,9 @@ public class Customer extends RestaurantSimulator implements Runnable {
             doors.release();
 
             // Pick table to go sit at
-            int currentTable;
+            int currentTable = firstTableChoice;
             if (tableLine[firstTableChoice] >= 7 && tableLine[backupTableChoice] < 7)
                 currentTable = backupTableChoice;
-            else
-                currentTable = firstTableChoice;
             System.out.println("Customer " + customerId + " selects the table " + currentTable);
 
             // Get in line to sit at table

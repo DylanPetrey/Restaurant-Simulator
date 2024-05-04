@@ -42,7 +42,6 @@ public class Waiter extends RestaurantSimulator implements Runnable{
                 System.out.println("Waiter " + waiterId + " waits for the order");
                 Thread.sleep((int)(Math.random() * 700 + 300));
 
-
                 // Pick up order
                 kitchen.acquire();
                 System.out.println("Waiter " + waiterId + " enters the kitchen");
